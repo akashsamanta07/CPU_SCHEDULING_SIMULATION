@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="answercss.css">
+    <title>Cpu Scheduling Simulation</title>
+</head>
+<body>
+    <header id="mainheader">CPU  SCHEDULING  SIMULATION</header>
+    <section id="firstsection">
+        <div class="firstdiv3 firstdiv1" id="firstdiv2">
+        <label for="algorithm" class="k">
+            SELECT ALGORITHM<br>
+            <select name="cpu" id="algorithm">
+                <option value="none">None</option>
+                <option value="fcfs">First Come First Served</option>
+                <option value="sjf">Shortest Job First</option>
+                <option value="srtf">Shortest Remaining Time First</option>
+                <option value="rr">Round Robin</option>
+                <option value="ps">Priority Scheduling</option>
+            </select>
+        </label>
+        <div id="timequan">
+            <label for="tq" style="font-size: 1rem;" class="k">Enter Time Quantum
+                <br>
+                <input type="number" id="timeq" placeholder="Ex: 1,2,3..">
+            </label>
+        </div>
+        <div id="preemt">
+            <label for="preem">
+                <select name="ps" id="preem">
+                    <option value="pt">Preemptive Scheduling</option>
+                    <option value="npt">Non-Preemptive Scheduling</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div id="processtable">
+        <table class="table table-bordered" id="table1">
+            <thead>
+                <tr>
+                    <th>Process ID</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th id="p1">Enter Priority</th>
+                </tr>
+            </thead>
+            <tbody id="tem">
+            </tbody>
+        </table>
+        <div class="input1">
+            <div class="input">
+                <input type="number" placeholder="Process Id" class="in" id="a1">
+                <input type="number" placeholder="Arrival time" class="in" id="a2">
+                <input type="number" placeholder="Burst Time" class="in" id="a3">
+                <input type="number" class="in" id="p2" placeholder="Priority">
+            </div>
+            <div class="input inputbutton">
+                <button class="main" id="add">Add Process</button>
+                <button class="main" id="calculate">Calculate</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    <button id="next">NEXT</button>
+</div>
+<div class="ans">
+    <section id="head"></section>
+</div>
+<div class="ans">
+    <button id="gt">Gantt Chart</button>
+</div>
+<div class="ans">
+    <b id="gct"></b>
+</div>
+<div class="ans">
+    <button id="table">Table</button>
+</div>
+<div id="ptable">
+    <table class="table table-bordered" id="table2">
+        <thead>
+            <tr>
+                <th>Process ID</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+                <th id="p10">Enter Priority</th>
+                <th>Completion<br>Time</th>
+                <th>Turn Around<br>Time</th>
+                <th>Waiting Time</th>
+            </tr>
+        </thead>
+        <tbody id="databody">        
+        </tbody>
+    </table>
+</div>
+<div class="ans">
+    <button id="solution">Solution</button>
+</div>
+<div class="answercss1" id="average">
+    <b id="avgtat"></b>
+    <b id="avgwt"></b>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

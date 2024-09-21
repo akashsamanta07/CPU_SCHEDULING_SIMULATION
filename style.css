@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #E3A5C7;
+}
+header{
+    background-color: #694F8E;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgb(241, 182, 7);
+}
+.firstdiv1{
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    background-color: #B692C2;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: rgb(70, 12, 242);
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 1px 2px black;
+    border-radius: 10px;
+}
+#firstdiv2{
+    background-color: #B692C2;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: rgb(70, 12, 242);
+    max-width: 500px;
+    height: 200px;
+    margin:6rem auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    border-radius: 10px;
+}
+#algorithm{
+    margin: 0 auto;
+    height: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+select,input{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px;
+}
+#preemt{
+    padding: 1rem;
+    font-size: 1.2rem;
+    max-width: 300px;
+}
+#preem{
+    margin: 0 auto;
+    height: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+#timeq{
+    height: 2rem;
+    max-width: 5rem;
+    margin: 10px auto;
+    font-weight: bold;
+    text-align: center;
+}
+.k{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#timequan{
+    display: none;
+}
+#firstsection{
+    margin: 3rem 0;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+button{
+    background-color: #2e0ae6;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+}
+button:active{
+    background-color: #6e7ae7;
+    color:black;
+    box-shadow: 0 3px rgb(16, 16, 229);
+    transform: scale(0.95);
+}
+#processtable{
+    max-width: 950px;
+    display: none;
+}
+.table{
+    width: 100%;
+    background-color: orange;
+}
+td,th{
+    height: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid black; 
+}
+.input{
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.inputbutton{
+    justify-content: center;
+}
+#add{
+    background-color: #4ae90b;
+}
+a{
+    text-decoration: none;
+}
+#calculate{
+    background-color: #ef4208;
+}
+.in{
+    width: 7rem;
+    height: 2rem;
+    text-align: center;
+}
+.main{
+    margin: 0;
+}
+#p1,#p2{
+    display: none;
+}
+#gt{
+    margin-top: 5rem;
+    display: none;
+}
+
+@media(max-width: 530px){
+    #p1{
+        padding: 0;
+        padding-top: 1.2rem;
+        height: 3.5rem;
+    }
+    #firstsection{
+        padding: 0 1rem 0 0.5rem;
+    }
+    button{
+        background-color: #2e0ae6;
+        color: white;
+        font-weight:300;
+        margin: 0 auto;
+        padding: 5px 10px;
+        border-radius: 8px;
+        border: 1px solid darkblue;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out 0s;
+    }
+    #mainheader{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(214, 241, 7);
+    }
+    .firstdiv3{
+        padding: 0.8rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+        background-color: #B692C2;
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(70, 12, 242);
+        max-width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        box-shadow: 1px 1px black;
+        border-radius: 10px;
+    }
+    #algorithm{
+        height: 2rem;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    #preem{
+        height: 1.8rem;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
