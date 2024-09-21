@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="path/to/favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="answercss.css">
     <title>Cpu Scheduling Simulation</title>
@@ -11,7 +12,7 @@
     <header id="mainheader">CPU  SCHEDULING  SIMULATION</header>
     <section id="firstsection">
         <div class="firstdiv3 firstdiv1" id="firstdiv2">
-        <label for="algorithm" class="k">
+        <div class="k">
             SELECT ALGORITHM<br>
             <select name="cpu" id="algorithm">
                 <option value="none">None</option>
@@ -21,12 +22,12 @@
                 <option value="rr">Round Robin</option>
                 <option value="ps">Priority Scheduling</option>
             </select>
-        </label>
+        </div>
         <div id="timequan">
-            <label for="tq" style="font-size: 1rem;" class="k">Enter Time Quantum
+            <div style="font-size: 1rem;" class="k">Enter Time Quantum
                 <br>
                 <input type="number" id="timeq" placeholder="Ex: 1,2,3..">
-            </label>
+            </div>
         </div>
         <div id="preemt">
             <label for="preem">
