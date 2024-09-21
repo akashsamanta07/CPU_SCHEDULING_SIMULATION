@@ -181,6 +181,7 @@ const fcfs = () => {
     let current = 0;
     let avgtat = 0;
     let avgwt = 0;
+    process.sort((a,b)=>a.id-b.id);
     gantt=[];
     while (n < process.length) {
         let min = Infinity;
@@ -220,6 +221,7 @@ const sjf = () => {
     let avgtat = 0;
     let avgwt = 0;
     gantt=[];
+    process.sort((a,b)=>a.id-b.id);
     process.sort((a,b)=>a.at-b.at);
     while (n < process.length) {
         let minBt = Infinity;  
@@ -254,6 +256,7 @@ const sjf = () => {
 };
 
 const srtf = () => {
+    process.sort((a,b)=>a.id-b.id);
     process.sort((a, b) => a.at - b.at);
     let currentTime = 0, completed = 0;
     let totalTAT = 0, totalWT = 0;
@@ -324,6 +327,7 @@ const rr = () => {
     let queue = [];
     let i = 0;
     gantt=[];
+    process.sort((a,b)=>a.id-b.id);
     process.sort((a, b) => a.at - b.at); 
 
     while (completed < n) {
@@ -371,6 +375,7 @@ const rr = () => {
     avgwt1.textContent= "AVERAGE WAITING TIME : "+b;
 };
 const nps = () => {
+    process.sort((a,b)=>a.id-b.id);
     process.sort((a, b) => a.at - b.at); 
     let currentTime = 0, completed = 0;
     let totalTAT = 0, totalWT = 0;
@@ -415,6 +420,7 @@ const pps = () => {
     let tem1;
     let tem2=-1;
     let tem3=-1;
+    process.sort((a,b)=>a.id-b.id);
     process.sort((a, b) => a.at - b.at);
     while (completed < n) {
         tem1=0;
