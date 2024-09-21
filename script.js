@@ -80,10 +80,10 @@ let a3=document.getElementById("a3");
 let a4=document.getElementById("p2");
 add.addEventListener("click",()=>{
     resetanswer();
-    let b1=parseInt((a1.value=="") ? 0: a1.value);
-    let b2=parseInt((a2.value=="") ? 0: a2.value);
-    let b3=parseInt((a3.value=="") ? 0: a3.value);
-    let b4=parseInt((a4.value=="") ? 0: a4.value);
+    let b1=parseInt((a1.value=="" || a1.value=="0") ? 1: a1.value);
+    let b2=parseInt((a2.value=="" || a1.value=="0") ? 1: a2.value);
+    let b3=parseInt((a3.value=="" || a1.value=="0") ? 1: a3.value);
+    let b4=parseInt((a4.value=="" || a1.value=="0") ? 1: a4.value);
     process.push(new processes(b1,b2,b3,b4));
     let tr=document.createElement("tr");
     let td1=document.createElement("td");
@@ -316,7 +316,7 @@ const srtf = () => {
 };
 
 const rr = () => {
-    document.getElementById("timeq").value=(document.getElementById("timeq").value)==""? 0 : document.getElementById("timeq").value;
+    document.getElementById("timeq").value=((document.getElementById("timeq").value)=="" || document.getElementById("timeq").value=="0") ? 1 : document.getElementById("timeq").value;
     let tq = parseInt(document.getElementById("timeq").value);  
     let currentTime = 0, completed = 0;
     let totalTAT = 0, totalWT = 0;
@@ -485,7 +485,7 @@ calculate.addEventListener("click",()=>{
         head.textContent="Shortest Remaining Time First ( Preemtive )";
         srtf();
     }else if(tqvalue2=="rr"){
-        document.getElementById("timeq").value=(document.getElementById("timeq").value)==""? 0 : document.getElementById("timeq").value;
+        document.getElementById("timeq").value=((document.getElementById("timeq").value)=="" || document.getElementById("timeq").value=="0") ? 1 : document.getElementById("timeq").value;
         head.textContent="Round Robin ( time quantum - "+ document.getElementById("timeq").value+" )";
         rr();
     }else if(tqvalue2=="ps"){
