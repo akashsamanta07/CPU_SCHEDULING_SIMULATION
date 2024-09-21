@@ -276,20 +276,23 @@ const srtf = () => {
                 tem1++;
             }
         }
-        if (tem2 === -1 || tem2 < tem1 || tem2 === n) {
-            if (tem2 === n) {
-                if (gantt[gantt.length - 1] !== process[shortest].id || (tem3 !==-1 && tem3 !== tem1)) {
-                    gantt.push(process[shortest].id);
-                }
-            } else {
-                gantt.push(process[shortest].id);
-            }
-        }
-        tem3=tem2;        
-        tem2=tem1;
+        
         if (shortest === -1) {
             currentTime++; 
         } else {
+
+            if (tem2 === -1 || tem2 < tem1 || tem2 === n) {
+                if (tem2 === n) {
+                    if (gantt[gantt.length - 1] !== process[shortest].id || (tem3 !==-1 && tem3 !== tem1)) {
+                        gantt.push(process[shortest].id);
+                    }
+                } else {
+                    gantt.push(process[shortest].id);
+                }
+            }
+            tem3=tem2;        
+            tem2=tem1;
+            
             process[shortest].rt--;  
             currentTime++;            
             if (process[shortest].rt === 0) {
@@ -426,24 +429,22 @@ const pps = () => {
                 tem1++;
             }
         }
-
-
-        if (tem2 === -1 || tem2 < tem1 || tem2 === n) {
-            if (tem2 === n) {
-                if (gantt[gantt.length - 1] !== process[highestIndex].id || (tem3 !==-1 && tem3 !== tem1)) {
-                    gantt.push(process[highestIndex].id);
-                }
-            } else {
-                gantt.push(process[highestIndex].id);
-            }
-        }
-        tem3=tem2;        
-        tem2=tem1;
-
-
         if (highestIndex === -1) {
             currentTime++;
         } else {
+
+            if (tem2 === -1 || tem2 < tem1 || tem2 === n) {
+                if (tem2 === n) {
+                    if (gantt[gantt.length - 1] !== process[highestIndex].id || (tem3 !==-1 && tem3 !== tem1)) {
+                        gantt.push(process[highestIndex].id);
+                    }
+                } else {
+                    gantt.push(process[highestIndex].id);
+                }
+            }
+            tem3=tem2;        
+            tem2=tem1;
+
             process[highestIndex].rt--; 
             currentTime++;               
             if (process[highestIndex].rt === 0) {

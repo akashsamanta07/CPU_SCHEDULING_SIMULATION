@@ -74,6 +74,9 @@ body{
         padding-top: 1rem;
         height: 3.5rem;
     }
+    #ptable{
+        max-width: 99vw;
+    }
     td,th{
         height: 2.5rem;
         font-weight: 100;
