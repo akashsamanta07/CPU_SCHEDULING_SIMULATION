@@ -1,1 +1,1 @@
-#CPU Scheduling Simulation
+CPU Scheduling Simulation
