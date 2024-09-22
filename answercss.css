@@ -71,6 +71,9 @@ table{
     margin: 2rem 2rem 10rem 2rem;
     display: none;
 }
+.resetbutton:active{
+    box-shadow: 0 3px 2px green;
+}
 @media(max-width: 770px){
     #ptable{
         max-width: 90vw;

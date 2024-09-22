@@ -108,14 +108,14 @@ button{
     margin: 0 auto;
     padding: 10px 30px;
     border-radius: 10px;
-    border: 2px solid darkblue;
+    border: 2px solid rgb(13, 13, 23);
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
 }
 button:active{
     background-color: #6e7ae7;
     color:black;
-    box-shadow: 0 3px rgb(16, 16, 229);
+    box-shadow: 0 3px 2px rgb(16, 16, 229);
     transform: scale(0.95);
 }
 #processtable{
@@ -147,11 +147,17 @@ td,th{
 #add{
     background-color: #4ae90b;
 }
+#add:active{
+    box-shadow: 0 3px 2px #4ae90b;
+}
 a{
     text-decoration: none;
 }
 #calculate{
     background-color: #ef4208;
+}
+#calculate:active{
+    box-shadow: 0 3px 2px #ef4208;
 }
 .in{
     width: 7rem;
@@ -210,8 +216,8 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid black;
-        box-shadow: 1px 1px black;
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px black;
         border-radius: 10px;
     }
     #algorithm{
