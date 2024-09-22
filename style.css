@@ -5,15 +5,15 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #E3A5C7;
+    background-color: #10d691;
 }
 header{
-    background-color: #694F8E;
+    background-color: #5409be;
     padding: 20px;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 900;
-    color: rgb(241, 182, 7);
+    color: white;
 }
 .firstdiv1{
     padding: 1rem;
@@ -124,7 +124,6 @@ button:active{
 }
 .table{
     width: 100%;
-    background-color: orange;
 }
 td,th{
     height: 2.5rem;
@@ -133,6 +132,12 @@ td,th{
     padding: 0.5rem;
     border: 2px solid black; 
     border-radius: 5px;
+}
+th{
+    background-color: #065ff9;
+}
+td{
+    background-color: #e6ee03;
 }
 .input{
     margin: 2rem 0;

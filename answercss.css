@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #E3A5C7;
-}
 table{
     border-radius: 10px;
 }
@@ -20,9 +17,9 @@ table{
     display: none;
 }
 #gct{
-    color: rgb(10, 9, 9);
+    color: white;
     font-size: 1rem;
-    background-color: #eef602;
+    background-color: #f602b1;
     padding: 0.8rem;
     font-weight: 300;
     border-radius: 10px;
