@@ -6,6 +6,9 @@
 body{
     background-color: #E3A5C7;
 }
+table{
+    border-radius: 10px;
+}
 #head{
     background-color: #7ff00f;
     padding: 1rem;
@@ -45,7 +48,6 @@ body{
 }
 .answercss1{
     margin: 2rem;
-    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +64,12 @@ body{
 }
 #solution{
     display:none;
+}
+.resetbutton{
+    color: black;
+    background-color: rgb(60, 247, 3);
+    margin: 2rem 2rem 10rem 2rem;
+    display: none;
 }
 @media(max-width: 770px){
     #ptable{

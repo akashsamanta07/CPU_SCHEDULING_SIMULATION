@@ -16,6 +16,7 @@ let solution=document.getElementById("solution");
 let avgtat1=document.getElementById("avgtat");
 let avgwt1=document.getElementById("avgwt");
 let average1=document.getElementById("average");
+let resetbutton=document.getElementById("reset");
 const resetanswer=()=>{
     gt.style.display="none";
     head.style.display="none";
@@ -28,6 +29,7 @@ const resetanswer=()=>{
     average1.style.display="none";
     avgtat1.textContent="";
     avgwt1.textContent="";
+    resetbutton.style.display="none";
 }
 tq1.addEventListener("change",()=>{
     resetanswer();
@@ -528,4 +530,10 @@ table.addEventListener("click",()=>{
 solution.addEventListener("click",()=>{
     solution.style.display="none";
     average1.style.display="flex";
+    resetbutton.style.display="block";
+});
+
+
+resetbutton.addEventListener("click",()=>{
+    location.reload();
 });
