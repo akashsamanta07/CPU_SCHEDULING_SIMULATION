@@ -81,36 +81,59 @@ let a2=document.getElementById("a2");
 let a3=document.getElementById("a3");
 let a4=document.getElementById("p2");
 add.addEventListener("click",()=>{
-    resetanswer();
-    let b1=parseInt(a1.value=="" ? 1: a1.value);
-    let b2=parseInt(a2.value=="" ? 1: a2.value);
-    let b3=parseInt((a3.value=="" || a3.value=="0") ? 1: a3.value);
-    let b4=parseInt((a4.value=="" || a4.value=="0") ? 1: a4.value);
-    process.push(new processes(b1,b2,b3,b4));
-    let tr=document.createElement("tr");
-    let td1=document.createElement("td");
-    let td2=document.createElement("td");
-    let td3=document.createElement("td");
-    let td4=document.createElement("td");
-    td1.textContent=b1;
-    td2.textContent=b2;
-    td3.textContent=b3;
-    td4.textContent=b4;
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    let parent=document.getElementById("tem");
-    let tqvalue1=tq1.value;
-    if(tqvalue1==="ps"){
-        tr.appendChild(td4);
-        parent.appendChild(tr);
+    let r=0;
+    let e=0;
+    let t=0;
+    if(a1.value != ""){
+        for(let i=0;i<process.length;i++){
+            if(parseInt(a1.value)==process[i].id){
+                r=1;
+            }
+        }
     }else{
-        parent.appendChild(tr);
+        r=1;
     }
-    a1.value="";
-    a2.value="";
-    a3.value="";
-    a4.value="";
+    if(a2.value != "" && parseInt(a2.value) < 0){
+        e=1;
+    }
+    if(a3.value =="" || parseInt(a3.value) <= 0){
+        t=1;
+    }
+    if(r === 0 && t===0 && e===0){
+        resetanswer();
+        let b1=parseInt(a1.value);
+        let b2=parseInt(a2.value=="" ? 0: a2.value);
+        let b3=parseInt(a3.value);
+        let b4=parseInt(a4.value=="" ? 0: a4.value);
+        process.push(new processes(b1,b2,b3,b4));
+        let tr=document.createElement("tr");
+        let td1=document.createElement("td");
+        let td2=document.createElement("td");
+        let td3=document.createElement("td");
+        let td4=document.createElement("td");
+        td1.textContent=b1;
+        td2.textContent=b2;
+        td3.textContent=b3;
+        td4.textContent=b4;
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        let parent=document.getElementById("tem");
+        let tqvalue1=tq1.value;
+        if(tqvalue1==="ps"){
+            tr.appendChild(td4);
+            parent.appendChild(tr);
+        }else{
+            parent.appendChild(tr);
+        }
+        a1.value="";
+        a2.value="";
+        a3.value="";
+        a4.value="";
+    }
+    else{
+        alert("Invalid input");
+    }
 });
 
 const tabledata1=()=>{
