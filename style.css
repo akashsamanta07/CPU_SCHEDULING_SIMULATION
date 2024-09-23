@@ -134,6 +134,7 @@ td,th{
     border-radius: 5px;
 }
 th{
+    color: white;
     background-color: #065ff9;
 }
 td{

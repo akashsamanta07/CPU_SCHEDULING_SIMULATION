@@ -290,7 +290,6 @@ const srtf = () => {
     gantt=[];
     let tem1;
     let tem2=-1;
-    let tem3=-1;
     while (completed < n) {
         tem1=0;
         minRT = Infinity;
@@ -311,16 +310,14 @@ const srtf = () => {
 
             if (tem2 === -1 || tem2 < tem1 || tem2 === n) {
                 if (tem2 === n) {
-                    if (gantt[gantt.length - 1] !== process[shortest].id || (tem3 !==-1 && tem3 !== tem1)) {
+                    if (gantt[gantt.length - 1] !== process[shortest].id) {
                         gantt.push(process[shortest].id);
                     }
                 } else {
                     gantt.push(process[shortest].id);
                 }
-            }
-            tem3=tem2;        
+            }       
             tem2=tem1;
-            
             process[shortest].rt--;  
             currentTime++;            
             if (process[shortest].rt === 0) {
@@ -444,7 +441,6 @@ const pps = () => {
     const n = process.length;
     let tem1;
     let tem2=-1;
-    let tem3=-1;
     process.sort((a,b)=>a.id-b.id);
     process.sort((a, b) => a.at - b.at);
     while (completed < n) {
@@ -466,14 +462,13 @@ const pps = () => {
 
             if (tem2 === -1 || tem2 < tem1 || tem2 === n) {
                 if (tem2 === n) {
-                    if (gantt[gantt.length - 1] !== process[highestIndex].id || (tem3 !==-1 && tem3 !== tem1)) {
+                    if (gantt[gantt.length - 1] !== process[highestIndex].id) {
                         gantt.push(process[highestIndex].id);
                     }
                 } else {
                     gantt.push(process[highestIndex].id);
                 }
-            }
-            tem3=tem2;        
+            }       
             tem2=tem1;
 
             process[highestIndex].rt--; 
@@ -532,12 +527,17 @@ calculate.addEventListener("click",()=>{
 gt.addEventListener("click",()=>{
     gct.style.display="block";
     gt.style.display="none";
-    gct.textContent="--";
-    for(let i=0;gantt.length;i++){
-        let h=gantt.shift();
-        gct.textContent = gct.textContent+ "P"+h +"--";
+    gct.textContent="";
+    if(gantt.length==0){
+        gct.textContent="No Process";
+        resetbutton.style.display="block";
+    }else{
+        for(let i=0;i<gantt.length-1;i++){
+            gct.textContent = gct.textContent+ "P"+gantt[i]+"--";
+        }
+        gct.textContent=gct.textContent+"P"+gantt[gantt.length-1];
+        table.style.display="block";
     }
-    table.style.display="block";
 });
 
 table.addEventListener("click",()=>{
