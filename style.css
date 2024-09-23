@@ -190,8 +190,6 @@ a{
         padding: 0 1rem 0 0.5rem;
     }
     button{
-        background-color: #2e0ae6;
-        color: white;
         font-weight:300;
         margin: 0 auto;
         padding: 5px 10px;
@@ -205,16 +203,13 @@ a{
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(214, 241, 7);
     }
     .firstdiv3{
         padding: 0.8rem;
         padding-top: 1rem;
         padding-bottom: 0;
-        background-color: #B692C2;
         font-weight: 600;
         font-size: 1rem;
-        color: rgb(70, 12, 242);
         max-width: 300px;
         height: 200px;
         display: flex;

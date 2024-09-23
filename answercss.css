@@ -94,8 +94,6 @@ table{
         border: 1px solid black; 
     }
     .answercss1 b{
-        background-color: #0707ef;
-        color: white;
         font-size: 12px;
         font-weight: 200;
         margin: 0.2rem;
@@ -103,12 +101,10 @@ table{
         border-radius: 5px;
     }
     #head{
-        background-color: #7ff00f;
         padding: 0.5rem;
         text-align: center;
         font-size: 10px;
         font-weight: 300;
-        color: rgb(22, 22, 20);
         border-radius: 8px;
         display: none;
     }
