@@ -125,6 +125,9 @@ button:active{
     box-shadow: 0 3px 2px rgb(16, 16, 229);
     transform: scale(0.95);
 }
+table{
+    border-radius: 10px;
+}
 #processtable{
     max-width: 950px;
     display: none;

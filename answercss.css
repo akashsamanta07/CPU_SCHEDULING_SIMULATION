@@ -1,17 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-table{
-    border-radius: 10px;
+.ans{
+    margin: 2rem 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 #head{
     background-color: #8606e2;
-    padding: 1rem;
+    padding: 0.8rem;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 700;
     color: white;
     border-radius: 10px;
     display: none;
@@ -24,11 +21,6 @@ table{
     font-weight: 300;
     border-radius: 10px;
     display: none;
-}
-.ans{
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
 }
 #table{
     display: none;
@@ -63,12 +55,12 @@ table{
 }
 .resetbutton{
     color: white;
-    background-color: rgb(60, 247, 3);
+    background-color: rgb(181, 3, 3);
     margin: 2rem 2rem 10rem 2rem;
     display: none;
 }
 .resetbutton:active{
-    box-shadow: 0 3px 2px green;
+    box-shadow: 0 3px 2px rgb(92, 2, 2);
 }
 @media(max-width: 770px){
     #ptable{
@@ -101,11 +93,9 @@ table{
     }
     #head{
         padding: 0.5rem;
-        text-align: center;
         font-size: 14px;
         font-weight: 200;
         border-radius: 8px;
-        display: none;
     }
     #gct{
         font-size: 12px;
