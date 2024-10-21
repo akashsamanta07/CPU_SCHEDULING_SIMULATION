@@ -183,6 +183,9 @@ a{
 .main{
     margin: 0;
 }
+.p3{
+    padding-top: 10px;
+}
 #p1,#p2{
     display: none;
 }
@@ -190,7 +193,76 @@ a{
     margin-top: 5rem;
     display: none;
 }
-
+.ans{
+    margin: 2rem 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+#head{
+    background-color: #8606e2;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    display: none;
+}
+#gct{
+    color: white;
+    font-size: 1rem;
+    background-color: #f602b1;
+    padding: 0.8rem;
+    font-weight: 300;
+    border-radius: 10px;
+    display: none;
+}
+#table{
+    display: none;
+}
+#ptable{
+    max-width: 70vw;
+    margin: 3rem auto;
+    display: none;
+}
+#p10{
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    height: 5rem;
+    display: none;
+}
+.answercss1{
+    margin: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.answercss1 b{
+    background-color: #0707ef;
+    color: white;
+    font-weight: 500;
+    margin: 0.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+#solution{
+    display:none;
+}
+.resetbutton{
+    color: white;
+    background-color: rgb(181, 3, 3);
+    margin: 2rem 2rem 10rem 2rem;
+    display: none;
+}
+.resetbutton:active{
+    box-shadow: 0 3px 2px rgb(92, 2, 2);
+}
+@media(max-width: 770px){
+    #ptable{
+        max-width: 99vw;
+    }
+}
 @media(max-width: 530px){
     #p1{
         padding: 0;
@@ -244,5 +316,36 @@ a{
         height: 1.8rem;
         font-size: 10px;
         font-weight: 600;
+    }
+    #p10{
+        height: 4rem;
+    }
+    td,th{
+        height: 2.5rem;
+        font-weight: normal;
+        font-size: 12px;
+        text-align: center;
+        padding: 0.5rem 0.1rem;
+        border: 1px solid black; 
+    }
+    .answercss1 b{
+        font-size: 12px;
+        font-weight: 200;
+        margin: 0.2rem;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #head{
+        padding: 0.5rem;
+        font-size: 14px;
+        font-weight: 200;
+        border-radius: 8px;
+    }
+    #gct{
+        font-size: 12px;
+        padding: 5px;
+        font-weight: 200;
+        border-radius: 10px;
+        display: none;
     }
 }

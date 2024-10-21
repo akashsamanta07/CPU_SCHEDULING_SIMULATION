@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="answercss.css">
     <title>Cpu Scheduling Simulation</title>
 </head>
 <body>
@@ -48,7 +47,7 @@
                     <th class ="p3" id="p1">Enter Priority</th>
                 </tr>
             </thead>
-            <tbody id="tem">
+            <tbody id="insertprocess">
             </tbody>
         </table>
         <div class="input1">
@@ -87,7 +86,7 @@
                 <th>Process ID</th>
                 <th>Arrival Time</th>
                 <th>Burst Time</th>
-                <th id="p10">Enter Priority</th>
+                <th id="p10" class ="p3">Priority</th>
                 <th>Completion<br>Time</th>
                 <th>Turn Around<br>Time</th>
                 <th>Waiting Time</th>
@@ -98,11 +97,12 @@
     </table>
 </div>
 <div class="ans">
-    <button id="solution">Avg TAT & WT</button>
+    <button id="solution">Avg TAT & WT & RT</button>
 </div>
 <div class="answercss1" id="average">
     <b id="avgtat"></b>
     <b id="avgwt"></b>
+    <b id="avgrt"></b>
 </div>
 <div class="ans">
     <button  class="resetbutton" id="reset">Reset</button>
