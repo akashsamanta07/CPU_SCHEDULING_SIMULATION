@@ -59,9 +59,16 @@ header{
     border-radius: 10px;
 }
 select,input{
+    border: 1px solid black;
     cursor: pointer;
     border-radius: 5px;
     padding: 4px;
+}
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
 }
 #preemt{
     padding: 1rem;
@@ -143,7 +150,7 @@ td{
 .input{
     margin: 2rem 0;
     display: flex;
-    gap: 0.5rem;
+    gap: 5px;
     justify-content: space-around;
 }
 .inputbutton{
@@ -188,7 +195,7 @@ a{
         height: 3.5rem;
     }
     #firstsection{
-        padding: 0 1rem 0 0.5rem;
+        padding: 3px;
     }
     button{
         font-weight:300;
