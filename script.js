@@ -446,6 +446,7 @@ const pps = () => {
     let tem2=-1;
     process.sort((a,b)=>a.id-b.id);
     process.sort((a, b) => a.at - b.at);
+    gantt=[];
     while (completed < n) {
         tem1=0;
         let highestPriority = Infinity;
