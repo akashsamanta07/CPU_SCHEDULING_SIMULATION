@@ -197,6 +197,10 @@ a{
     #firstsection{
         padding: 3px;
     }
+    .in{
+        width: 5rem;
+        font-size: 0.6rem;
+    }
     button{
         font-weight:300;
         margin: 0 auto;
