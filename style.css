@@ -143,11 +143,11 @@ td{
 .input{
     margin: 2rem 0;
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 0.5rem;
     justify-content: space-around;
 }
 .inputbutton{
+    gap: 1.5rem;
     justify-content: center;
 }
 #add{

@@ -7,12 +7,12 @@ table{
     border-radius: 10px;
 }
 #head{
-    background-color: #7ff00f;
+    background-color: #8606e2;
     padding: 1rem;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 900;
-    color: rgb(22, 22, 20);
+    color: white;
     border-radius: 10px;
     display: none;
 }
@@ -103,8 +103,8 @@ table{
     #head{
         padding: 0.5rem;
         text-align: center;
-        font-size: 10px;
-        font-weight: 300;
+        font-size: 14px;
+        font-weight: 200;
         border-radius: 8px;
         display: none;
     }
