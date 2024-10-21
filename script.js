@@ -3,7 +3,7 @@ let preem=document.getElementById("preem");
 let tq2=document.getElementById("timequan");
 let p1=document.getElementById("p1");
 let p2=document.getElementById("p2");
-
+let p3 =document.getElementsByClassName("p3");
 
 let head=document.getElementById("head");
 let gt=document.getElementById("gt");
@@ -40,11 +40,15 @@ tq1.addEventListener("change",()=>{
         tq2.style.display="none";
     }
     if(tqvalue==="ps"){
-        p1.style.display="block";
+        for(let i=0;i<p3.length;i++){
+            p3[i].style.display="block";
+        }
         p2.style.display="block";
         preem.style.display="block";
     }else{
-        p1.style.display="none";
+        for(let i=0;i<p3.length;i++){
+            p3[i].style.display="none";
+        }
         p2.style.display="none";
         preem.style.display="none";
     }
@@ -111,21 +115,20 @@ add.addEventListener("click",()=>{
         let td2=document.createElement("td");
         let td3=document.createElement("td");
         let td4=document.createElement("td");
+        td4.setAttribute("class","p3");
         td1.textContent=b1;
         td2.textContent=b2;
         td3.textContent=b3;
         td4.textContent=b4;
+        if(tq1.value != "ps"){
+            td4.style.display="none";
+        }
         tr.appendChild(td1);
         tr.appendChild(td2);
         tr.appendChild(td3);
+        tr.appendChild(td4);
         let parent=document.getElementById("tem");
-        let tqvalue1=tq1.value;
-        if(tqvalue1==="ps"){
-            tr.appendChild(td4);
-            parent.appendChild(tr);
-        }else{
-            parent.appendChild(tr);
-        }
+        parent.appendChild(tr);
         a1.value="";
         a2.value="";
         a3.value="";

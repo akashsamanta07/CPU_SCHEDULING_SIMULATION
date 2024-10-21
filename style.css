@@ -161,16 +161,16 @@ td{
     justify-content: center;
 }
 #add{
-    background-color: #4ae90b;
+    background-color: green;
 }
 #add:active{
-    box-shadow: 0 3px 2px #4ae90b;
+    box-shadow: 0 3px 2px #17360b;
 }
 a{
     text-decoration: none;
 }
 #calculate{
-    background-color: #ef4208;
+    background-color: red;
 }
 #calculate:active{
     box-shadow: 0 3px 2px #ef4208;
