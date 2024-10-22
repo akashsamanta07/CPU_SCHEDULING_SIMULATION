@@ -264,9 +264,6 @@ td{
         margin: 0 auto;
         padding: 5px 10px;
         border-radius: 8px;
-        border: 1px solid darkblue;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out 0s;
     }
     #mainheader{
     padding: 15px;
