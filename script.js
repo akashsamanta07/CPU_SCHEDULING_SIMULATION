@@ -1,6 +1,7 @@
 const tq1=document.getElementById("algorithm");
 const preem=document.getElementById("preem");
 const tq2=document.getElementById("timequan");
+const tq3=document.getElementById("timeq");
 const p2=document.getElementById("p2");
 const p3 =document.getElementsByClassName("p3");
 
@@ -254,7 +255,6 @@ const srtf = () => {
 };
 
 const rr = () => {
-    document.getElementById("timeq").value=((document.getElementById("timeq").value)=="" || document.getElementById("timeq").value=="0") ? 1 : document.getElementById("timeq").value;
     let tq = parseInt(document.getElementById("timeq").value);  
     let currentTime = 0, completed = 0;
     let totalTAT = 0, totalWT = 0;
@@ -445,10 +445,15 @@ tq1.addEventListener("change",()=>{
         p2.style.display="none";
         preem.style.display="none";
     }
+    if(tqvalue == "none"){
+        alert("Select a algorithm");
+    }
 });
-
-tq2.addEventListener("change",()=>{
+tq3.addEventListener("change",()=>{
     hardReset();
+    if(tq3.value =="" || tq3.value <= 0){
+        alert("Enter correct Time Quantum");
+    }
 });
 
 preem.addEventListener("change",()=>{
@@ -515,9 +520,9 @@ add.addEventListener("click",()=>{
 ans.addEventListener("click",()=>{
     hardReset();
     let tqvalue2=tq1.value;
-    if(tqvalue2 != "none"){
-        head.style.display="block";
-        gt.style.display="block";
+    if(tqvalue2 == "none"){
+        alert("Select a algorithm");
+        return;
     }
     if(tqvalue2=="fcfs"){
         head.textContent="First Come First Served ( Non-Preemtive )";
@@ -529,9 +534,13 @@ ans.addEventListener("click",()=>{
         head.textContent="Shortest Remaining Time First ( Preemtive )";
         srtf();
     }else if(tqvalue2=="rr"){
-        document.getElementById("timeq").value=((document.getElementById("timeq").value)=="" || document.getElementById("timeq").value=="0") ? 1 : document.getElementById("timeq").value;
-        head.textContent="Round Robin ( time quantum - "+ document.getElementById("timeq").value+" )";
-        rr();
+        if(tq3.value =="" || tq3.value <= 0){
+            alert("Enter correct Time Quantum");
+            return;
+        }else{
+            head.textContent="Round Robin ( time quantum - "+ tq3.value +" )";
+            rr();
+        }
     }else if(tqvalue2=="ps"){
         if(preem.value=="npt"){
             head.textContent="Priority Scheduling ( Non-Preemtive )";
@@ -541,6 +550,8 @@ ans.addEventListener("click",()=>{
             pps();
         }
     }
+    head.style.display="block";
+    gt.style.display="block";
 });
 
 gt.addEventListener("click",()=>{
