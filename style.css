@@ -63,11 +63,6 @@ select,input{
     cursor: pointer;
     border-radius: 5px;
     padding: 4px;
-}
-input:focus{
-    outline: none;
-}
-select:focus{
     outline: none;
 }
 #preemt{
