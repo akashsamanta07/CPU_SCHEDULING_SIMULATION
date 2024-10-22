@@ -108,21 +108,21 @@ select:focus{
     gap:1rem;
 }
 button{
-    background-color: #2e0ae6;
+    background-color: rgb(179, 6, 6);
     color: white;
     font-weight: bolder;
     display: block;
     margin: 0 auto;
     padding: 10px 30px;
     border-radius: 10px;
-    border: 2px solid rgb(13, 13, 23);
+    border: 2px solid rgb(232, 2, 2);
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
 }
 button:active{
-    background-color: #6e7ae7;
     color:black;
-    box-shadow: 0 3px 2px rgb(16, 16, 229);
+    background-color: #a41e1e;
+    box-shadow: 0 3px 2px rgb(189, 22, 22);
     transform: scale(0.95);
 }
 table{
@@ -162,18 +162,11 @@ td{
 }
 #add{
     background-color: green;
+    border: 2px solid rgba(11, 134, 2, 0.775);
 }
 #add:active{
     box-shadow: 0 3px 2px #17360b;
-}
-a{
-    text-decoration: none;
-}
-#calculate{
-    background-color: red;
-}
-#calculate:active{
-    box-shadow: 0 3px 2px #ef4208;
+    background-color: #26a921;
 }
 .in{
     width: 7rem;
@@ -250,13 +243,8 @@ a{
     display:none;
 }
 .resetbutton{
-    color: white;
-    background-color: red;
-    margin: 2rem 2rem 10rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
     display: none;
-}
-.resetbutton:active{
-    box-shadow: 0 3px 2px rgb(92, 2, 2);
 }
 @media(max-width: 770px){
     #ptable{
