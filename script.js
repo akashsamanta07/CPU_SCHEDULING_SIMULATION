@@ -462,59 +462,54 @@ algobutton.addEventListener("click",()=>{
     processtable.style.display="block";
 });
 
-
 add.addEventListener("click",()=>{
     hardReset();
-    let r=0;
-    let e=0;
-    let t=0;
     if(a1.value != ""){
         for(let i=0;i<process.length;i++){
             if(parseInt(a1.value)==process[i].id){
-                r=1;
+                alert("Enter correct Process ID");
+                return;
             }
         }
     }else{
-        r=1;
+        alert("Enter correct Process ID");
+        return;
     }
     if(a2.value != "" && parseInt(a2.value) < 0){
-        e=1;
+        alert("Enter correct Arrival Time");
+        return;
     }
     if(a3.value =="" || parseInt(a3.value) <= 0){
-        t=1;
+        alert("Enter correct Burst Time");
+        return;
     }
-    if(r === 0 && t===0 && e===0){
-        let b1=parseInt(a1.value);
-        let b2=parseInt(a2.value=="" ? 0: a2.value);
-        let b3=parseInt(a3.value);
-        let b4=parseInt(a4.value=="" ? 0: a4.value);
-        process.push(new processes(b1,b2,b3,b4));
-        let tr=document.createElement("tr");
-        let td1=document.createElement("td");
-        let td2=document.createElement("td");
-        let td3=document.createElement("td");
-        let td4=document.createElement("td");
-        td4.setAttribute("class","p3");
-        td1.textContent=b1;
-        td2.textContent=b2;
-        td3.textContent=b3;
-        td4.textContent=b4;
-        if(tq1.value != "ps"){
-            td4.style.display="none";
-        }
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-        tr.appendChild(td3);
-        tr.appendChild(td4);
-        parent.appendChild(tr);
-        a1.value="";
-        a2.value="";
-        a3.value="";
-        a4.value="";
+    let b1=parseInt(a1.value);
+    let b2=parseInt(a2.value=="" ? 0: a2.value);
+    let b3=parseInt(a3.value);
+    let b4=parseInt(a4.value=="" ? 0: a4.value);
+    process.push(new processes(b1,b2,b3,b4));
+    let tr=document.createElement("tr");
+    let td1=document.createElement("td");
+    let td2=document.createElement("td");
+    let td3=document.createElement("td");
+    let td4=document.createElement("td");
+    td4.setAttribute("class","p3");
+    td1.textContent=b1;
+    td2.textContent=b2;
+    td3.textContent=b3;
+    td4.textContent=b4;
+    if(tq1.value != "ps"){
+        td4.style.display="none";
     }
-    else{
-        alert("Invalid input");
-    }
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    parent.appendChild(tr);
+    a1.value="";
+    a2.value="";
+    a3.value="";
+    a4.value="";
 });
 
 ans.addEventListener("click",()=>{

@@ -251,7 +251,7 @@ a{
 }
 .resetbutton{
     color: white;
-    background-color: rgb(181, 3, 3);
+    background-color: red;
     margin: 2rem 2rem 10rem 2rem;
     display: none;
 }
