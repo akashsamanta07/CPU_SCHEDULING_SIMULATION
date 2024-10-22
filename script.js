@@ -538,7 +538,8 @@ ans.addEventListener("click",()=>{
             alert("Enter correct Time Quantum");
             return;
         }else{
-            head.textContent="Round Robin ( time quantum - "+ tq3.value +" )";
+            head.textContent="Round Robin ( time quantum - "+ parseInt(tq3.value) +" )";
+            tq3.value=parseInt(tq3.value);
             rr();
         }
     }else if(tqvalue2=="ps"){
