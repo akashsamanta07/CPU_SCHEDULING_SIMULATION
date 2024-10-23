@@ -45,7 +45,7 @@ class processes{
         this.tat=0;
         this.wt=0;
         this.c=0;
-        this.frt;
+        this.frt=0;
     }
 }
 let process=[];
