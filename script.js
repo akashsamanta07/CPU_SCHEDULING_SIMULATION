@@ -462,9 +462,11 @@ preem.addEventListener("change",()=>{
 
 
 algobutton.addEventListener("click",()=>{
+    setTimeout(()=>{
     algobutton.style.display="none";
     firstdiv.removeAttribute("id");
     processtable.style.display="block";
+    },500);
 });
 
 add.addEventListener("click",()=>{
@@ -551,43 +553,61 @@ ans.addEventListener("click",()=>{
             pps();
         }
     }
-    head.style.display="block";
-    gt.style.display="block";
+    setTimeout(()=>{
+        head.style.display="block";
+    },500);
+    setTimeout(()=>{
+        gt.style.display="block";
+    },1000);
 });
 
 gt.addEventListener("click",()=>{
-    gct.style.display="block";
     gt.style.display="none";
+    setTimeout(()=>{
+        gct.style.display="block";
+    },500);
     gct.textContent="";
     if(gantt.length==0){
         gct.textContent="No Process";
-        resetbutton.style.display="block";
+        setTimeout(()=>{
+            resetbutton.style.display="block";
+        },1000);
     }else{
         for(let i=0;i<gantt.length-1;i++){
             gct.textContent = gct.textContent+ "P"+gantt[i]+"--";
         }
         gct.textContent=gct.textContent+"P"+gantt[gantt.length-1];
-        table.style.display="block";
+        setTimeout(()=>{
+            table.style.display="block";
+        },1000);
     }
 });
 
 table.addEventListener("click",()=>{
     table.style.display="none";
-    ptable.style.display="flex";
+    setTimeout(()=>{
+        ptable.style.display="flex";
+    },500);
     let tqvalue10=tq1.value;
     if(tqvalue10 != "ps"){
         p10.style.display="none";
     }  
-    solution.style.display="block"; 
+    setTimeout(()=>{
+        solution.style.display="block";
+    },1000);
 });
 
 solution.addEventListener("click",()=>{
     solution.style.display="none";
-    average1.style.display="flex";
-    resetbutton.style.display="block";
+    setTimeout(()=>{
+        average1.style.display="flex";
+    },500);
+    setTimeout(()=>{
+        resetbutton.style.display="block";
+    },1000);
 });
-
-
 resetbutton.addEventListener("click",()=>{
-    location.reload();
+    setTimeout(()=>{
+        location.reload();
+    },500);
 });

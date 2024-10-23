@@ -238,8 +238,10 @@ td{
     display:none;
 }
 .resetbutton{
-    margin: 2rem 2rem 2rem 2rem;
     display: none;
+}
+.reload{
+    margin-bottom: 0.5rem;
 }
 @media(max-width: 770px){
     #ptable{
