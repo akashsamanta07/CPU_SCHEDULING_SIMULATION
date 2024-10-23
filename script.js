@@ -30,6 +30,10 @@ const avgrt1=document.getElementById("avgrt");
 const average1=document.getElementById("average");
 const resetbutton=document.getElementById("reset");
 
+const autoscroll = ()=>{
+    window.scrollTo(0,document.body.scrollHeight);
+}
+
 class processes{
     constructor(id,at,bt,p){
         this.id=id;
@@ -558,6 +562,7 @@ ans.addEventListener("click",()=>{
     },500);
     setTimeout(()=>{
         gt.style.display="block";
+        autoscroll();
     },1000);
 });
 
@@ -571,6 +576,7 @@ gt.addEventListener("click",()=>{
         gct.textContent="No Process";
         setTimeout(()=>{
             resetbutton.style.display="block";
+            autoscroll();
         },1000);
     }else{
         for(let i=0;i<gantt.length-1;i++){
@@ -579,6 +585,7 @@ gt.addEventListener("click",()=>{
         gct.textContent=gct.textContent+"P"+gantt[gantt.length-1];
         setTimeout(()=>{
             table.style.display="block";
+            autoscroll();
         },1000);
     }
 });
@@ -594,6 +601,7 @@ table.addEventListener("click",()=>{
     }  
     setTimeout(()=>{
         solution.style.display="block";
+        autoscroll();
     },1000);
 });
 
@@ -604,6 +612,7 @@ solution.addEventListener("click",()=>{
     },500);
     setTimeout(()=>{
         resetbutton.style.display="block";
+        autoscroll();
     },1000);
 });
 resetbutton.addEventListener("click",()=>{
