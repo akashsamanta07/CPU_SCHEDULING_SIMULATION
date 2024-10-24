@@ -114,10 +114,9 @@ button{
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
 }
-button:active{
+button:hover{
     color:black;
     background-color: #a41e1e;
-    box-shadow: 0 3px 2px rgb(189, 22, 22);
     transform: scale(0.95);
 }
 table{
@@ -156,11 +155,10 @@ td{
     justify-content: center;
 }
 #add{
-    background-color: green;
+    background-color: #28a745;
     border: 2px solid rgba(11, 134, 2, 0.775);
 }
-#add:active{
-    box-shadow: 0 3px 2px #17360b;
+#add:hover{
     background-color: #26a921;
 }
 .in{
