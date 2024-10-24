@@ -84,6 +84,7 @@ const tabledata=()=>{
         let td5=document.createElement("td");
         let td6=document.createElement("td");
         let td7=document.createElement("td");
+        let td8=document.createElement("td");
         td1.textContent=process[i].id;
         td2.textContent=process[i].at;
         td3.textContent=process[i].bt;
@@ -91,6 +92,8 @@ const tabledata=()=>{
         td5.textContent=process[i].ct;
         td6.textContent=process[i].tat;
         td7.textContent=process[i].wt;
+        td8.textContent=process[i].frt;
+        
         td4.setAttribute("class","p3");
         if(tq1.value != "ps"){
             td4.style.display="none";
@@ -102,6 +105,7 @@ const tabledata=()=>{
         tr.appendChild(td5);
         tr.appendChild(td6);
         tr.appendChild(td7);
+        tr.appendChild(td8);
         parent2.appendChild(tr);
     }
 }
@@ -470,7 +474,7 @@ algobutton.addEventListener("click",()=>{
     algobutton.style.display="none";
     form.style.display = "none";
     firstdiv.removeAttribute("id");
-    processtable.style.display="block";
+    processtable.style.display="flex";
     },500);
 });
 

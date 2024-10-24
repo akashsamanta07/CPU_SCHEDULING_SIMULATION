@@ -123,6 +123,10 @@ table{
 }
 #processtable{
     max-width: 950px;
+     overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: none;
 }
 .table{
@@ -210,6 +214,7 @@ td{
     max-width: 70vw;
     margin: 3rem auto;
     display: none;
+    overflow: auto;
 }
 #p10{
     padding-top: 1.5rem;
@@ -262,7 +267,7 @@ a:hover {
         max-width: 99vw;
     }
 }
-@media(max-width: 530px){
+@media(max-width: 620px){
     #p1{
         padding: 0;
         padding-top: 1.2rem;
