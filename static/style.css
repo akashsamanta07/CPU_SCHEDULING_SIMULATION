@@ -115,9 +115,8 @@ button{
     transition: all 0.2s ease-in-out 0s;
 }
 button:hover{
-    color:black;
     background-color: #a41e1e;
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 table{
     border-radius: 10px;
@@ -160,6 +159,7 @@ td{
 }
 #add:hover{
     background-color: #26a921;
+    transform: scale(0.98);
 }
 .in{
     width: 7rem;
