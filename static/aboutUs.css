@@ -44,12 +44,21 @@ h4{
         width: 100px;
     }
     h2{
-        font-size: 15px;
+        font-size: 14px;
     }
     h3{
         font-size: 13px;
     }
     h4{
         font-size: 11px;
+    }
+    h2,h3{
+        padding: 0.6rem 0.8rem;
+    }
+    h4{
+        padding: 0.3rem 0.8rem;
+    }
+    #last{
+        padding-bottom: 0.6rem;
     }
 }
