@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/static/feedback.css">
 </head>
 <body>
-    <div class="feedback-container">
+    <div class="feedback-container" id="feed">
         <h2>Feedback Form</h2>
         <form id = "submit" action="#">
             <label for="name">Name:</label>
@@ -22,6 +22,10 @@
 
             <button type="submit">Submit</button>
         </form>
+    </div>
+    <div id="thanks">
+        <b>Thank you for your feedback!</b><br>
+        <a href="/tamplate/feedback.html">Give another response</a>
     </div>
     <script src="/static/feedback.js"></script>
 </body>

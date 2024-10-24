@@ -9,8 +9,7 @@ body {
     background-color: #10d691;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-top: 10rem;
 }
 
 .feedback-container {
@@ -68,7 +67,18 @@ button {
 button:hover {
     background-color: #218838;
 }
-
+#thanks{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 4.8rem;
+    display: none;
+}
+a{
+    text-decoration: none;
+}
 @media (max-width: 600px) {
     body {
         padding: 20px;
