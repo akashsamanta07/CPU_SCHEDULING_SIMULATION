@@ -29,6 +29,7 @@ const avgwt1=document.getElementById("avgwt");
 const avgrt1=document.getElementById("avgrt");
 const average1=document.getElementById("average");
 const resetbutton=document.getElementById("reset");
+const form = document.getElementById("form");
 
 const autoscroll = ()=>{
     window.scrollTo(0,document.body.scrollHeight);
@@ -63,6 +64,7 @@ const hardReset=()=>{
     avgwt1.textContent="";
     avgrt1.textContent="";
     resetbutton.style.display="none";
+    form.style.display= "none";
     for(let i=0;i<process.length;i++){
         process[i].rt=process[i].bt;
         process[i].c=0;
@@ -576,6 +578,7 @@ gt.addEventListener("click",()=>{
         gct.textContent="No Process";
         setTimeout(()=>{
             resetbutton.style.display="block";
+            form.style.display = "block";
             autoscroll();
         },1000);
     }else{
@@ -612,6 +615,7 @@ solution.addEventListener("click",()=>{
     },500);
     setTimeout(()=>{
         resetbutton.style.display="block";
+        form.style.display = "block";
         autoscroll();
     },1000);
 });

@@ -241,7 +241,22 @@ td{
     display: none;
 }
 .reload{
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+a{
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+    background-color: #28a745;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+a:hover {
+    background-color: #218838;
+}
+#form{
+    display: none;
 }
 @media(max-width: 770px){
     #ptable{
