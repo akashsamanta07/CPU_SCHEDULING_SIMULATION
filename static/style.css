@@ -243,6 +243,10 @@ td{
 .reload{
     margin-bottom: 1rem;
 }
+#form{
+    display:flex;
+    justify-content: center;
+}
 a{
     text-decoration: none;
     margin: 1rem;
@@ -254,9 +258,6 @@ a{
 }
 a:hover {
     background-color: #218838;
-}
-#form{
-    display: none;
 }
 @media(max-width: 770px){
     #ptable{
