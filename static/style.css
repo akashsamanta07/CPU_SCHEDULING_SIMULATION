@@ -345,4 +345,7 @@ a:hover {
         border-radius: 10px;
         display: none;
     }
+    a{
+        font-size: 0.6rem;
+    }
 }
