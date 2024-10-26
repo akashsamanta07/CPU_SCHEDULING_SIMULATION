@@ -315,6 +315,7 @@ td{
     font-size: 1rem;
     padding: 10px 15px;
     font-weight: 600;
+    gap: 0;
     }
     #icon {
         font-size: 0.6rem;
@@ -327,10 +328,10 @@ td{
       }
     
       #icon1{
-        padding: 10px 5px;
+        padding: 10px 4px;
       }
       #icon2{
-        padding: 0 5px 10px 5px;
+        padding: 0 8px 10px 8px;
       }
     .firstdiv3{
         padding: 0.8rem;
