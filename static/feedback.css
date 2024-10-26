@@ -5,16 +5,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #10d691;
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .feedback-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 1rem 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -36,7 +35,6 @@ form {
 label {
     margin-bottom: 5px;
     font-size: 14px;
-    color: #555;
 }
 
 input[type="text"],
@@ -49,16 +47,11 @@ textarea {
     font-size: 14px;
 }
 
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
 button {
     padding: 10px;
     background-color: #28a745;
+    border: 2px solid green;
     color: #fff;
-    border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
@@ -68,11 +61,12 @@ button:hover {
     background-color: #218838;
 }
 #thanks{
+    margin-top: 6rem;
     text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     height: 4.8rem;
     display: none;
 }
@@ -81,12 +75,11 @@ a{
 }
 @media (max-width: 600px) {
     body {
-        padding: 20px;
+        padding:0 3rem;
     }
 
     .feedback-container {
         max-width: 100%;
-        padding: 15px;
     }
 
     h2 {
