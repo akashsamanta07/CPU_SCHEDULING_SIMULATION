@@ -64,10 +64,9 @@ button:hover {
     margin-top: 6rem;
     text-align: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 8px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-    height: 4.8rem;
     display: none;
 }
 a{
