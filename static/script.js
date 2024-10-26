@@ -29,7 +29,12 @@ const avgwt1=document.getElementById("avgwt");
 const avgrt1=document.getElementById("avgrt");
 const average1=document.getElementById("average");
 const resetbutton=document.getElementById("reset");
-const form = document.getElementById("form");
+
+function toggleOptions() {
+    const options = document.getElementById('options');
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+  }
+
 const autoscroll = ()=>{
     window.scrollTo(0,document.body.scrollHeight);
 }
@@ -472,7 +477,6 @@ preem.addEventListener("change",()=>{
 algobutton.addEventListener("click",()=>{
     setTimeout(()=>{
     algobutton.style.display="none";
-    form.style.display = "none";
     firstdiv.removeAttribute("id");
     processtable.style.display="flex";
     },500);
