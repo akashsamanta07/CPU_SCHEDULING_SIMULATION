@@ -29,9 +29,8 @@ const avgwt1=document.getElementById("avgwt");
 const avgrt1=document.getElementById("avgrt");
 const average1=document.getElementById("average");
 const resetbutton=document.getElementById("reset");
-
+const options = document.getElementById("options");
 function toggleOptions() {
-    const options = document.getElementById('options');
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
   }
 
@@ -56,6 +55,7 @@ class processes{
 let process=[];
 let gantt=[];
 const hardReset=()=>{
+    options.style.display = "none";
     gt.style.display="none";
     head.style.display="none";
     gct.style.display="none";
@@ -475,6 +475,7 @@ preem.addEventListener("change",()=>{
 
 
 algobutton.addEventListener("click",()=>{
+    options.style.display = "none";
     setTimeout(()=>{
     algobutton.style.display="none";
     firstdiv.removeAttribute("id");
@@ -576,6 +577,7 @@ ans.addEventListener("click",()=>{
 });
 
 gt.addEventListener("click",()=>{
+    options.style.display = "none";
     gt.style.display="none";
     setTimeout(()=>{
         gct.style.display="block";
@@ -600,6 +602,7 @@ gt.addEventListener("click",()=>{
 });
 
 table.addEventListener("click",()=>{
+    options.style.display = "none";
     table.style.display="none";
     setTimeout(()=>{
         ptable.style.display="flex";
@@ -615,6 +618,7 @@ table.addEventListener("click",()=>{
 });
 
 solution.addEventListener("click",()=>{
+    options.style.display = "none";
     solution.style.display="none";
     setTimeout(()=>{
         average1.style.display="flex";
